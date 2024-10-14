@@ -3,6 +3,7 @@ import { getUsers } from "../../services/GetUsers";
 import CommonButton from "../../common/commonButton/CommonButton";
 import CommonSpinner from "../../common/commonSpinner/CommonSpinner";
 import UserAddress from '../userAddress/UserAddress';
+import { Address } from '../../types/Address';
 
 interface Users {
   name: string;
@@ -10,7 +11,7 @@ interface Users {
   id: number;
   phone: string;
   website: string;
-  address: { street: string; suite: string; city: string; zipcode: string };
+  address: Address
 }
 
 export default function Homepage() {

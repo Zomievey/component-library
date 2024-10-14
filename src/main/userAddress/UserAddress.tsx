@@ -1,12 +1,8 @@
 import React from "react";
+import { Address } from "../../types/Address";
 
 interface UserAddressProps {
-  address: {
-    street: string;
-    suite: string;
-    city: string;
-    zipcode: string;
-  };
+  address: Address;
 }
 
 export default function UserAddress({ address }: UserAddressProps) {
